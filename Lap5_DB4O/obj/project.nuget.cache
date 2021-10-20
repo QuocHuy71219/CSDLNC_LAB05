@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "t7W8LOyxUgfGBEOFDktrLLHyG+eTWXnlYRgp/BM3a3AsA5r2HrPK7YruANdCyHB5LR4efar5B27pPtqlilRuOw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\Lap5_DB4O\\Lap5_DB4O\\Lap5_DB4O.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\db4o-core\\8.1.6\\db4o-core.8.1.6.nupkg.sha512"
+  ],
+  "logs": []
+}
