@@ -83,5 +83,114 @@ namespace Lap5_DB4O
         {
             Database.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var temp1 = new Employee
+            {
+                Ssn = int.Parse(Ssn.Text),
+                FName = FName.Text,
+                MInit = char.Parse(MInit.Text),
+                LName = LName.Text,
+                Address = Address.Text,
+                BirthDate = DateTime.Parse(BirthDate.Text),
+                Salary = float.Parse(Salary.Text),
+                Gender = char.Parse(Gender.Text),
+            };
+            var department = MyBusiness.GetDepartment("Khoa CNTT");
+            if (department == null)
+            {
+                department = new Department
+                {
+                    DName = "Khoa CNTT",
+                    DNumber = 81
+                };
+            }
+            temp1.WorksFor = department;
+
+
+            Database.Update<Employee>(temp1);
+
+            var filterTemp = new Employee();
+            var result = Database.DB.QueryByExample(filterTemp);
+            dataGridView1.DataSource = result.ToList();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var temp1 = new Employee
+            {
+                Ssn = int.Parse(Ssn.Text),
+                FName = FName.Text,
+                MInit = char.Parse(MInit.Text),
+                LName = LName.Text,
+                Address = Address.Text,
+                BirthDate = DateTime.Parse(BirthDate.Text),
+                Salary = float.Parse(Salary.Text),
+                Gender = char.Parse(Gender.Text),
+            };
+            var department = MyBusiness.GetDepartment("Khoa CNTT");
+            if (department == null)
+            {
+                department = new Department
+                {
+                    DName = "Khoa CNTT",
+                    DNumber = 81
+                };
+            }
+            temp1.WorksFor = department;
+
+
+
+            
+            var result = Database.DB.QueryByExample(temp1);
+            Employee p = (Employee)result[0];
+            Database.DB.Delete(p);
+            var filterTemp = new Employee();
+            var result1 = Database.DB.QueryByExample(filterTemp);
+            dataGridView1.DataSource = result1.ToList();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var temp1 = new Employee
+            {
+                Ssn = int.Parse(Ssn.Text),
+                //FName = FName.Text,
+                //MInit = char.Parse(MInit.Text),
+                //LName = LName.Text,
+                //Address = Address.Text,
+                //BirthDate = DateTime.Parse(BirthDate.Text),
+                //Salary = float.Parse(Salary.Text),
+                //Gender = char.Parse(Gender.Text),
+            };
+            var department = MyBusiness.GetDepartment("Khoa CNTT");
+            if (department == null)
+            {
+                department = new Department
+                {
+                    DName = "Khoa CNTT",
+                    DNumber = 81
+                };
+            }
+            temp1.WorksFor = department;
+
+
+            var result = Database.DB.QueryByExample(temp1);
+            Employee p = (Employee)result.Next();
+            //Employee p = (Employee)result[0];
+            //p.AddSsn(int.Parse(Ssn.Text));
+            p.AddFName(FName.Text);
+            p.AddMInit(char.Parse(MInit.Text));
+            p.AddLName(LName.Text);
+            p.AddAddress(Address.Text);
+            p.AddBirthDate(DateTime.Parse(BirthDate.Text));
+            p.AddSalary(float.Parse(Salary.Text));
+            p.AddGender(char.Parse(Gender.Text));
+            Database.DB.Store(p);
+            var filterTemp = new Employee();
+            var result1 = Database.DB.QueryByExample(filterTemp);
+            dataGridView1.DataSource = result1.ToList();
+        }
     }
 }

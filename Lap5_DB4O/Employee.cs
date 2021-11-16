@@ -21,5 +21,37 @@ namespace Lap5_DB4O
         public Employee Supervisor { get; set; }
         public List<Employee> Supervisees { get; set; }
         public List<Dependent> Dependents { get; set; }
+        public void AddSsn(int Ssn)
+        {
+            this.Ssn = Ssn;
+        }
+        public void AddFName(string FName)
+        {
+            this.FName = FName;
+        }
+        public void AddMInit(char MInit)
+        {
+            this.MInit = MInit;
+        }
+        public void AddLName(string LName)
+        {
+            this.LName = LName;
+        }
+        public void AddAddress(string Address)
+        {
+            this.Address = Address;
+        }
+        public void AddBirthDate(DateTime BirthDate)
+        {
+            this.BirthDate = BirthDate;
+        }
+        public void AddSalary(float Salary)
+        {
+            this.Salary = Salary;
+        }
+        public void AddGender(char Gender)
+        {
+            this.Gender = Gender;
+        }
     }
 }
