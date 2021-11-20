@@ -1,0 +1,95 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "db4o-core/8.1.6": {
+        "runtime": {
+          "lib/netstandard2.0/Cecil.FlowAnalysis.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          },
+          "lib/netstandard2.0/Db4objects.Db4o-gpl-2010.dll": {
+            "assemblyVersion": "8.1.269.14431",
+            "fileVersion": "8.1.269.14431"
+          },
+          "lib/netstandard2.0/Db4objects.Db4o.CS-2010.dll": {
+            "assemblyVersion": "8.1.269.14430",
+            "fileVersion": "8.1.269.14430"
+          },
+          "lib/netstandard2.0/Db4objects.Db4o.Instrumentation-2010.dll": {
+            "assemblyVersion": "8.1.269.14430",
+            "fileVersion": "8.1.269.14430"
+          },
+          "lib/netstandard2.0/Db4objects.Db4o.Linq-2010.dll": {
+            "assemblyVersion": "8.1.269.14430",
+            "fileVersion": "8.1.269.14430"
+          },
+          "lib/netstandard2.0/Db4objects.Db4o.NativeQueries.dll": {
+            "assemblyVersion": "8.1.269.14430",
+            "fileVersion": "8.1.269.14430"
+          },
+          "lib/netstandard2.0/Mono.Cecil.dll": {
+            "assemblyVersion": "0.11.0.0",
+            "fileVersion": "0.11.0.0"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Microsoft.NETCore.Targets/1.1.0": {},
+      "System.Collections/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0"
+        }
+      }
+    }
+  },
+  "libraries": {
+    "db4o-core/8.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SylnRFpEA26e1TgtQ8VofYLd9jk2oInmdTVSWEIp4OL4KABcNDLKqnasQROLQVyph43BAHsUqh0CUguyGtgVEg==",
+      "path": "db4o-core/8.1.6",
+      "hashPath": "db4o-core.8.1.6.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+      "path": "microsoft.netcore.targets/1.1.0",
+      "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "System.Collections/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3Dcj85/TBdVpL5Zr+gEEBUuFe2icOnLalmEh9hfck1PTYbbyWuZgh4fmm2ysCLTrqLQw6t3TgTyJ+VLp+Qb+Lw==",
+      "path": "system.collections/4.3.0",
+      "hashPath": "system.collections.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "path": "system.runtime/4.3.0",
+      "hashPath": "system.runtime.4.3.0.nupkg.sha512"
+    }
+  }
+}

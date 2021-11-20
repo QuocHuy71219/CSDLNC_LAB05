@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "c5jYyktMi5/CrcdFy1qTIU24jVG1W+oPN/DOzbEntZ97TRwBZmNVNBL1u/+Qx6Dyvq+CBuHkOhhEpP8NwjkIDQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Lab05_DBNC-main\\Lap5_DB4O\\Lap5_DB4O.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\db4o-core\\8.1.6\\db4o-core.8.1.6.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
